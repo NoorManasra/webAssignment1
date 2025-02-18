@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Request Submission</title>
+</head>
+<body> 
+    <header>
+        <img src="sat.jpg" width="100" height="100" alt="Company Logo">
+        <h1>Maintenance Request System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="submit_request.html">Submit Request</a></li> 
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+
+    <h2>Submit a Maintenance Request</h2>
+<form action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Details</legend>
+     
+        <p>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+
+        <p>
+            <label for="location">Location/Room Number:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your room or location" required>
+        </p>
+
+        <p>
+            <label for="issue_description">Issue Description:</label>
+            <textarea id="issue_description" name="issue_description" rows="4" placeholder="Describe the issue..." required></textarea>
+        </p>
+
+        <p>
+            <label for="urgency_level">Urgency Level:</label>
+            <select id="urgency_level" name="urgency_level" required>
+                <option value="">Select priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="photo">Upload a Photo of the Issue (optional):</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Request">
+        </p>
+    </fieldset>
+</form>
+<p>
+    After submitting your request, please <a href="confirm.html">click here</a> to confirm your submission.
+</p>
+
+    <footer>
+        <p><a href="admin.html">Back to Administrator Dashboard</a></p>
+        <p>© 2024 Saturn Company | <a href="privacy.html">Privacy Policy</a></p>
+        <p>Contact us by email <a href="mailto:support@saturncompany.com">support@saturncompany.com</a></p>
+    </footer>
+</body>
+</html>

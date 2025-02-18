@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Ticket</title>
+</head>
+<body> 
+    <header>
+        <img src="sat.jpg" width="100" height="100" alt="Company Logo">
+        <h1>Maintenance Request System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="submit_request.html">Submit Request</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+
+    <h2>Assign Ticket #001</h2>
+    <p><strong>Issue Description:</strong> Leaky Faucet in Room 101</p> 
+    <p><strong>Urgency Level:</strong> High</p> 
+    <p><strong>Date Submitted:</strong> 18-10-2024</p> 
+
+    <section>
+        <h2>Assign to Team Member</h2>
+        <form action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php" method="post">
+            <label for="assignee">Assign to Staff Member:</label>
+            <select id="assignee" name="assignee" required>
+                <option value="">Select a team member</option> 
+                <option value="maher_ahmed">Maher Ahmed</option> 
+                <option value="Nour_Manasrah">Nour Manasrah</option> 
+                <option value="Rawan_Zayyat">Rawan Zayyat</option>
+                <option value="Jana_Zayyat">Jana Zayyat</option>
+            </select><br><br>
+
+            <button type="submit">Assign Ticket</button>
+        </form>
+    </section>
+
+    <footer>
+        <p><a href="admin.html">Back to Administrator Dashboard</a></p>
+        <p>© 2024 Saturn Company | <a href="privacy.html">Privacy Policy</a></p>
+        <p>Contact us by email <a href="mailto:support@saturncompany.com">support@saturncompany.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <img src="sat.jpg" width="100" height="100" alt="Company Logo">
+        <h1>Maintenance Request System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit_request.html">Submit Request</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Administrator Dashboard</h1>
+        <table border="1">
+            <tr>
+                <th>Ticket ID</th>
+                <th>Issue Description</th>
+                <th>Date Submitted</th>
+                <th>Urgency Level</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>#001</td>
+                <td>Leaky Faucet in Room 101</td>
+                <td>18-10-2024</td>
+                <td>High</td>
+                <td>Pending</td>
+                <td>
+                    <form action="assign_ticket001.html" method="get">
+                        <button type="submit">Assign</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>Air Conditioning Malfunction in Office</td>
+                <td>19-10-2024</td>
+                <td>Medium</td>
+                <td>Pending</td>
+                <td>
+                    <form action="assign_ticket002.html" method="get">
+                        <button type="submit">Assign</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2024 Saturn Company | <a href="privacy.html">Privacy Policy</a></p>
+        <p>Contact us by email <a href="mailto:support@saturncompany.com">support@saturncompany.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Maintenance Request System</title>
+</head>
+<body>
+    <header>
+        <img src="sat.jpg" width="100" height="100" alt="Company Logo">
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Administrator Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="submit_request.html">Submit Request</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Contact Information</h2>
+        <p><strong>Adresse :</strong> 45 Rue de la Liberté, 75012 Paris, France</p>
+        <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>        
+        <p><strong>Email:</strong> <a href="mailto:support@saturncompany.com">support@saturncompany.com</a></p>
+    </section>
+
+    <section>
+        <h2>Send Us a Message</h2>
+        <form action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php" method="post">
+            <label for="name">Sender Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Sender Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="location">Sender Location (City):</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="subject">Message Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="message">Message Body:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Saturn Company | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
